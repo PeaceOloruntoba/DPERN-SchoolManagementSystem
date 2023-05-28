@@ -1,0 +1,28 @@
+TODO:
+	- Course add and drop should offer by only the department head of the course
+	- Payment integration: Integrating Paypal and Stripe for students to pay there fee
+
+	- Create a dashboard for the school admin only: The dashboard will contain: -
+			- Overall attendance
+			- School demographics
+				gender
+				Home language
+				new/all students
+				new/all lecturers
+			- Recent CUD(create, update, and delete) activities
+				For example, Added videos, courses, documentations
+			- Students average grade per course:
+				This one helps the school admin to identify the students performance very quickly :)
+			- Overall Course Resources
+				- Total number of videos, courses, documentations
+			- Event calender:
+				- A calender that shows upcoming events
+			- Enrollments per course
+				- How many students enroll each course
+			- Website traffic over a specific user type (Admin, Student, Lecturer, etc.)
+	- Admin Panel:
+		- Restrict course add and drop by date range (start and end date)
+	- Apply Filtering for all tables.
+		- This can be done using `django-filter` and other jQuery libraries
+	- Apply data exporting for all tables
+		- This can be done only using jQuery libraries
