@@ -1,5 +1,5 @@
-# DMERN-SchoolManagementSystem
-School Management System using DMERN Stack, using Blockchain Technology for some functionalities
+# DPERN-SchoolManagementSystem
+School Management System using DPERN Stack, using Blockchain Technology for some functionalities
 D - Django
 P - PostgreSQL
 E - ExpressJS
