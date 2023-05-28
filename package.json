@@ -1,0 +1,26 @@
+{
+  "name": "django-lms-main",
+  "version": "1.0.0",
+  "description": "### I would love to see you contribute 👩‍💻👩‍💻, feel free to contribute and get awesome GitHub achievements :) ### Demo video: https://youtu.be/KKIeRXwZ-Sw ### Setup video: https://youtu.be/gMJfENDEyUs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.13.2",
+    "axios": "^1.4.0",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.2",
+    "ganache-cli": "^6.12.2",
+    "jsonwebtoken": "^9.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "truffle": "^5.9.2",
+    "web3": "^1.10.0"
+  }
+}
