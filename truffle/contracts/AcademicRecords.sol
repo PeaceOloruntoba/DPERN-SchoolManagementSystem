@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: MIT 
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
 contract AcademicRecords {
@@ -7,10 +7,11 @@ contract AcademicRecords {
     struct Student {
         uint256 studentId;
         string name;
-        address studentAddress; // Add the student's address
-        uint256[] enrolledCourses; // array of course IDs
-        mapping(uint256 => uint256) grades; // mapping from course ID to grade
-        mapping(uint256 => bool) completedCourses; // mapping from course ID to completion status
+        address studentAddress;
+        uint256[] enrolledCourses;
+        mapping(uint256 => uint256) grades;
+        mapping(uint256 => bool) completedCourses;
+        uint256 performance;
     }
     struct Course {
         uint256 courseId;
@@ -35,13 +36,13 @@ contract AcademicRecords {
         admin = msg.sender;
     }
 
-    function addStudent(uint256 studentId, string memory name) public onlyAdmin {
-        students[msg.sender].studentId = studentId;
-        students[msg.sender].name = name;
+    function addStudent(address studentAddress, uint256 studentId, string memory name) public onlyAdmin {
+        students[studentAddress].studentId = studentId;
+        students[studentAddress].name = name;
+        students[studentAddress].studentAddress = studentAddress;
     }
     function addCourse(uint256 courseId, string memory name, address lecturer) public onlyAdmin {
         courses[courseId] = Course(courseId, name, lecturer);
-        students[msg.sender].enrolledCourses.push(courseId); // Update enrolled courses for the student
     }
     function addLecturer(address lecturerAddress, string memory name) public onlyAdmin {
         lecturers[lecturerAddress] = Lecturer(lecturerAddress, name);
