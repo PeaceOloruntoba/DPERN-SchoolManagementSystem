@@ -73,7 +73,6 @@ contract AcademicRecords {
             revert("Unauthorized access to course completion status");
         }
     }
-
     function getEnrolledCourses(uint256 studentId) public view returns (uint256[] memory) {
         if (msg.sender == admin || msg.sender == students[msg.sender].studentAddress) {
             return students[msg.sender].enrolledCourses;
@@ -81,7 +80,4 @@ contract AcademicRecords {
             revert("Unauthorized access to enrolled courses");
         }
     }
-
-
-
 }

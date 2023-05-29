@@ -31,21 +31,18 @@ contract SchoolEvents {
     ) public onlyAdmin {
         events[eventId] = Event(name, date, location, 0, 0);
     }
-
     function makeDonation(uint256 eventId) public payable {
         Event storage eventObj = events[eventId];
         require(bytes(eventObj.name).length > 0, "Event does not exist");
 
         eventObj.totalDonations += msg.value;
     }
-
     function submitFeedback(uint256 eventId) public {
         Event storage eventObj = events[eventId];
         require(bytes(eventObj.name).length > 0, "Event does not exist");
 
         eventObj.feedbackCount++;
     }
-
     function getEvent(uint256 eventId)
         public
         view

@@ -19,12 +19,10 @@ contract StudentPayment {
     payments[paymentId] = Payment(msg.sender, msg.value, true, block.timestamp);
     emit PaymentMade(paymentId, msg.sender, msg.value, block.timestamp);
   }
-
   function getPaymentDetails(uint256 paymentId) external view returns (address, uint256, bool, uint256) {
     Payment memory payment = payments[paymentId];
     return (payment.studentAddress, payment.amount, payment.isPaid, payment.timestamp);
   }
-
   function checkPaymentStatus(uint256 paymentId) external view returns (bool) {
     return payments[paymentId].isPaid;
   }

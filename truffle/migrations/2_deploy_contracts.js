@@ -1,5 +1,5 @@
-const AcademicRecords = artifacts.require("AcademicRecords");
+const EventManagement = artifacts.require("SchoolEvents");
 
 module.exports = function(deployer){
-    deployer.deploy(AcademicRecords);
-}
+    deployer.deploy(EventManagement);
+};

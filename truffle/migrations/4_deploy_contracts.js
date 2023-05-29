@@ -1,5 +1,5 @@
-const PerformanceTracker = artifacts.require("PerformanceTracker");
+const StudentPayments = artifacts.require("StudentPayment");
 
 module.exports = function(deployer){
-    deployer.deploy(PerformanceTracker);
-}
+    deployer.deploy(StudentPayments);
+};
