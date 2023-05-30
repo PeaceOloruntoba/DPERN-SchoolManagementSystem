@@ -1,3 +1,5 @@
+# Make sure you have the numpy library installed before running this code. It calculates the desired probabilities based on the rate parameter and generates a random number from the exponential distribution.
+
 import numpy as np
 
 # Set the rate parameter (λ) for the exponential distribution
