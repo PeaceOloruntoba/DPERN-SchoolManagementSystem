@@ -42,7 +42,7 @@
 				<a href="{% url 'home' %}"><i class="fas fa-home"></i>Home</a>
 			</li>
 			<li class="{% if request.path == prof %}active{% endif %}">
-				<a href="{% url 'edit_profile' %}"><i class="fas fa-user"></i>Profile</a>
+				<a href="{% url 'profile' %}"><i class="fas fa-user"></i>Profile</a>
 			</li>
 
 			{% if request.user.is_superuser %}
@@ -139,7 +139,7 @@
 			<p>
 				<a target="_blank"> By Peace Oloruntoba</a>
 			</p>
-			<a href="https://github.com/PeaceOloruntoba/django-lms" class="btn btn-sm btn-dark mx-auto" target="_blank">
+			<a href="https://github.com/PeaceOloruntoba/DPERN-SchoolManagementSystem" class="btn btn-sm btn-dark mx-auto" target="_blank">
 				⭐️ Star on GitHub
 			</a>
 		</div>
